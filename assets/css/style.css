@@ -279,7 +279,7 @@ body.light-mode nav.scroll {
 
 a.logo {
   font-family: "Mozilla Headline", sans-serif;
-  font-size: 3rem;
+  font-size: 1rem;
   opacity: 0.7;
 }
 
@@ -605,7 +605,7 @@ body.light-mode #home img#notebook-2-white {
   width: 38rem;
 
   border-radius: 2rem;
-  box-shadow: 0 0 2rem black;
+  box-shadow: 0 0 2rem rgb(0, 32, 102);
 
   transition: 600ms;
 }
