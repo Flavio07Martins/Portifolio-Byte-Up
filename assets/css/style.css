@@ -10,10 +10,11 @@
 
 :root {
   --hue: 219;
-  --primary-color: hsl(var(--hue), 100%, 40%);
+  --primary-color: hsl(var(--hue), 100%, 30%);
   --primary-hover: hsl(var(--hue), 100%, 40%);
   --secundary-color: hsl(0, 0%, 5%);
   --third-color: hsla(0, 0%, 100%, 0.1);
+  --fourth-color: hsl(0, 0%, 13%);
   --bg-color: hsl(0, 0%, 8%);
 
   --headline: hsl(0, 0%, 100%);
@@ -200,31 +201,7 @@ body .social-links li svg path {
 body nav#navigation .social-links li:nth-child(1) svg:hover path,
 body .social-links li:nth-child(1) svg:hover path {
   stroke: #ff377a;
-}
 
-body .social-links li:nth-child(2) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(2) svg:hover path:nth-child(2) {
-  fill: #fff;
-}
-
-body.light-mode .social-links li:nth-child(2) svg:hover path:nth-child(2),
-body.light-mode
-  nav#navigation
-  .social-links
-  li:nth-child(2)
-  svg:hover
-  path:nth-child(2) {
-  fill: #000;
-}
-
-body .social-links li:nth-child(3) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(3) svg:hover path:nth-child(2) {
-  fill: #0a66c2;
-}
-
-body .social-links li:nth-child(4) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
-  fill: #00abf0;
 }
 
 /* == == */
@@ -284,7 +261,7 @@ a.logo {
 }
 
 nav#navigation a.logo {
-  color: var(--primary-color);
+  color: var(--fourth-color);
 }
 
 body.light-mode nav#navigation a.logo,
@@ -309,7 +286,7 @@ body.light-mode nav#navigation a.logo {
 
 body.light-mode footer a.logo,
 body.light-mode nav#navigation.scroll a.logo {
-  color: #000;
+  color: #000000;
 }
 
 /* == == */
@@ -605,7 +582,7 @@ body.light-mode #home img#notebook-2-white {
   width: 38rem;
 
   border-radius: 2rem;
-  box-shadow: 0 0 2rem rgb(0, 32, 102);
+  box-shadow: 0 0 2rem rgb(15, 15, 15);
 
   transition: 600ms;
 }
@@ -893,8 +870,8 @@ body.light-mode #home img#notebook-2-white {
 }
 
 #contact .col-b::after {
-  content: "";
-  display: block;
+ 
+  display: none !important;
 
   width: 13rem;
   height: 5rem;
@@ -904,7 +881,7 @@ body.light-mode #home img#notebook-2-white {
 }
 
 body.light-mode #contact .col-b::after {
-  background-color: grey;
+  background-color: rgb(255, 0, 0);
 }
 
 /*===== FOOTER ===============================================*/
@@ -1106,7 +1083,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   nav#navigation .menu ul li a {
-    color: var(--primary-color);
+    color: var(--fourth-color);
     opacity: 0.7;
 
     transition: opacity 0.4s;
@@ -1181,7 +1158,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   nav#navigation .social-links li:nth-child(1) svg path {
-    stroke: var(--primary-color);
+    stroke: var(--fourth-color);
   }
 
   nav#navigation .social-links li:nth-child(2) svg path:nth-child(2),
@@ -1359,6 +1336,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
     grid-template-areas: "A B";
+    align-items: flex-start;
   }
 
   #contact .col-a {
